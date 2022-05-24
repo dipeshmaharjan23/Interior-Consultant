@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@500;700&family=Montserrat:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 89%;
+  margin: 10px auto;
+  font-size: 10px;
+  position: relative;
+  color: white;
+  background-color: black;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: black;
+  color: white;
+}
+
+nav .logo {
+  display: inline-block;
+  border: 1px solid;
+  font-size: 14px;
+  font-family: "Crimson Pro", serif;
+  font-weight: 200;
+  padding: 6px 5px;
+  margin: 15px 1px;
+  text-align: center;
+  width: 110px;
+}
+
+nav .container7 {
+  position: absolute;
+  width: 100%;
+  height: 135vh;
+  background: black;
+  z-index: 100;
+  -webkit-transform: translateX(-120%);
+          transform: translateX(-120%);
+}
+
+nav .container7 .nav-menu {
+  list-style: none;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+nav .container7 li {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  margin: 30px;
+}
+
+nav .container7 b {
+  border-bottom: 2px solid;
+}
+
+.container7.active {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.menu {
+  width: 40px;
+  margin: 5px 0px;
+  cursor: pointer;
+  z-index: 200;
+}
+
+.menu .hamburger {
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+  width: 84%;
+  height: 4px;
+  background-color: white;
+  margin: 8px auto;
+}
+
+.menu-active .first {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.menu-active .second {
+  opacity: 0;
+}
+
+.menu-active .third {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+main .container1 {
+  margin-top: 45px;
+}
+
+main .container1 h1 {
+  font-size: 36px;
+  font-family: "Lora", serif;
+  font-weight: 500;
+}
+
+main .container1 p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 29.26px;
+  margin: 30px 0px;
+  max-width: 271px;
+}
+
+main .container1 .arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 180px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+main .container1 .arrow a {
+  text-decoration: none;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 45px;
+}
+
+main .container1 .arrow .material-icons {
+  font-size: 40px;
+  position: absolute;
+  top: -6px;
+  right: 0px;
+}
+
+main .container6 {
+  position: relative;
+}
+
+main .container6 .image img {
+  width: 99%;
+  margin-left: 1px;
+}
+
+main .container6 .container2 {
+  width: 80%;
+  margin-left: 15%;
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: -67px;
+  right: 10px;
+}
+
+main .container6 .container2 .container3 {
+  width: 75%;
+  margin: 0 10px;
+}
+
+main .container6 .container2 .container3 .container4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+main .container6 .container2 .container3 .container4 .container5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0px 10px;
+}
+
+main .container6 .container2 img {
+  border-radius: 50%;
+  width: 50px;
+}
+
+footer {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 165px;
+  text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+  .menu {
+    display: none;
+  }
+  nav .container7 {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    height: 0vh;
+    background: white;
+    position: relative;
+  }
+  nav .container7 .nav-menu {
+    height: 8vh;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    color: white;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 80px;
+  }
+  main .container1 {
+    margin: 65px 0px;
+    width: 40%;
+  }
+  main .container6 {
+    width: 60%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
